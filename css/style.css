@@ -203,3 +203,23 @@ body.scrolled .back-to-top {
 .social-media a:hover {
     color: #ffcc00;
 }
+
+/* Contador de visitas */
+.contador-visitas {
+    font-size: 18px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Negrita */
+    color: #333;
+    /* Color del texto */
+    font-family: Arial, sans-serif;
+    /* Fuente */
+    margin-top: 10px;
+    /* Espaciado superior */
+}
+
+/* Enlace "hit counter" */
+a[href="https://www.freecounterstat.com"] {
+    display: none;
+    /* Oculta el enlace "hit counter" */
+}
