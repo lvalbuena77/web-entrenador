@@ -29,13 +29,12 @@ header h1 {
 header .logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 35px;
-    /* Espacio entre el logo y el texto */
+    margin-right: 50px;
+    /* Aumentado margen para mayor separación */
 }
 
 header .logo img {
-    width: 140px;
-    /* Ajusta el tamaño del logo */
+    width: 160px;
     height: auto;
 }
 
@@ -122,15 +121,6 @@ section {
 
 h2 {
     color: #0077b6;
-    font-size: 2rem;
-    /* Tamaño más grande */
-    font-weight: bold;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
 }
 
 /* Imágenes */
@@ -201,14 +191,10 @@ body.scrolled .back-to-top {
 }
 
 #tipos ul li {
-    font-size: 1.2rem;
-    /* Tamaño más grande */
-    margin: 15px 0;
+    font-size: 18px;
+    margin: 10px 0;
     line-height: 1.6;
-    padding-left: 20px;
-    color: #555;
-    /* Color más suave */
-    font-weight: 500;
+    padding-left: 15px;
 }
 
 /* Datos de contacto */
@@ -277,8 +263,7 @@ a[href="https://www.freecounterstat.com"] {
 }
 
 #tarifas li {
-    font-size: 1.2rem;
-    /* Tamaño más grande */
+    font-size: 18px;
     margin: 10px 0;
     font-weight: bold;
 }
@@ -331,4 +316,27 @@ a[href="https://www.freecounterstat.com"] {
 .logros-monitor i {
     color: #0077b6;
     margin-right: 10px;
+}
+
+/* Estilos para ejemplos de texto */
+code {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0077b6;
+    display: inline-block;
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 20px 0;
 }
