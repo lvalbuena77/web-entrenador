@@ -162,10 +162,19 @@ footer {
 body.scrolled .back-to-top {
     display: block;
 }
-/* Métodos de Entrenamiento */
-#metodos ul {
-    list-style: none;    /* Quitar los puntos por defecto */
+/* Tipos de Entrenamiento */
+#tipos ul {
+    list-style-type: none !important; /* Elimina los puntos */
     padding: 0;
+    margin: 0;
+}
+
+#tipos ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+    padding-left: 15px;
+    /* Opcional: ajusta espaciado si es necesario */
 }
 
 
