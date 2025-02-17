@@ -223,3 +223,39 @@ a[href="https://www.freecounterstat.com"] {
     display: none;
     /* Oculta el enlace "hit counter" */
 }
+
+/* Tarifas */
+#tarifas {
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    padding: 40px;
+    text-align: center;
+}
+
+#tarifas h2 {
+    color: #333;
+}
+
+#tarifas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tarifas li:hover {
+    color: #0077b6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#tarifas li {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#tarifas img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
