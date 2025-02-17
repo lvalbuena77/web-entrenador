@@ -29,12 +29,12 @@ header h1 {
 header .logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 25px;
     /* Espacio entre el logo y el texto */
 }
 
 header .logo img {
-    width: 90px;
+    width: 110px;
     /* Ajusta el tamaño del logo */
     height: auto;
 }
