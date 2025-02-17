@@ -29,12 +29,12 @@ header h1 {
 header .logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 25px;
+    margin-right: 35px;
     /* Espacio entre el logo y el texto */
 }
 
 header .logo img {
-    width: 125px;
+    width: 140px;
     /* Ajusta el tamaño del logo */
     height: auto;
 }
@@ -122,6 +122,15 @@ section {
 
 h2 {
     color: #0077b6;
+    font-size: 2rem;
+    /* Tamaño más grande */
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Imágenes */
@@ -192,10 +201,14 @@ body.scrolled .back-to-top {
 }
 
 #tipos ul li {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 1.2rem;
+    /* Tamaño más grande */
+    margin: 15px 0;
     line-height: 1.6;
-    padding-left: 15px;
+    padding-left: 20px;
+    color: #555;
+    /* Color más suave */
+    font-weight: 500;
 }
 
 /* Datos de contacto */
@@ -264,7 +277,8 @@ a[href="https://www.freecounterstat.com"] {
 }
 
 #tarifas li {
-    font-size: 18px;
+    font-size: 1.2rem;
+    /* Tamaño más grande */
     margin: 10px 0;
     font-weight: bold;
 }
@@ -288,12 +302,6 @@ a[href="https://www.freecounterstat.com"] {
     background-color: #f4f4f4;
     text-align: center;
 }
-
-/* #presentacion h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-} */
 
 .monitor-info {
     display: flex;
