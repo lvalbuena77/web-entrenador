@@ -25,24 +25,15 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Estilo para el logo */
 header .logo {
     display: inline-block;
     vertical-align: middle;
     margin-right: 150px;
-    /* Aumentado margen para mayor separación */
 }
 
 header .logo img {
     width: 160px;
     height: auto;
-}
-
-/* Alineación del título junto al logo */
-header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 0;
 }
 
 /* Menú principal */
@@ -188,6 +179,9 @@ body.scrolled .back-to-top {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #tipos ul li {
@@ -197,197 +191,18 @@ body.scrolled .back-to-top {
     padding-left: 15px;
 }
 
-/* Datos de contacto */
-.contact-info {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.contact-info i {
-    margin-right: 8px;
-    color: #0077b6;
-    font-size: 20px;
-}
-
-/* Redes sociales */
-.social-media {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-media a {
+#tipos i {
     font-size: 24px;
-    color: #0077b6;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #ffcc00;
-}
-
-/* Contador de visitas */
-.contador-visitas {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin-top: 10px;
-}
-
-/* Enlace "hit counter" */
-a[href="https://www.freecounterstat.com"] {
-    display: none;
-}
-
-/* Tarifas */
-#tarifas {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-}
-
-#tarifas ul {
-    list-style: none;
-    padding: 0;
-}
-
-#tarifas li {
-    font-size: 18px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-#tarifas img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-#tarifas li:hover {
-    color: #ffcc00;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* Estilos para la sección Monitor */
-#presentacion {
-    padding: 40px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.monitor-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.foto-monitor {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.logros-monitor {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.logros-monitor li {
-    margin: 10px 0;
-}
-
-.logros-monitor i {
-    color: #0077b6;
     margin-right: 10px;
-}
-
-/* Estilos para ejemplos de texto */
-code {
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #0077b6;
-    display: inline-block;
-}
-
-pre {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #333;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin: 20px 0;
-}
-
-/* Estilo para la sección de tipos de entrenamiento */
-#tipos {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-}
-
-#tipos ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#tipos li {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .foto-entrenamiento {
     width: 50px;
-    /* Tamaño de la imagen */
     height: 50px;
     margin-right: 10px;
-    /* Espacio entre la imagen y el texto */
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-}
-
-#tipos i {
-    font-size: 24px;
-    /* Tamaño del ícono */
-    margin-right: 10px;
-    /* Espacio entre el ícono y el texto */
-}
-
-#tipos p {
-    font-size: 16px;
-    color: #333;
 }
 
 /* Responsividad */
