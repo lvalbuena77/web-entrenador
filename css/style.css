@@ -162,6 +162,11 @@ footer {
 body.scrolled .back-to-top {
     display: block;
 }
+/* Métodos de Entrenamiento */
+#metodos ul {
+    list-style: none;    /* Quitar los puntos por defecto */
+    padding: 0;
+}
 
 
 /* Datos de contacto */
