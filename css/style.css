@@ -270,3 +270,47 @@ a[href="https://www.freecounterstat.com"] {
     margin-top: 20px;
     border-radius: 10px;
 }
+
+/* Estilos para la sección Monitor */
+#presentacion {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#presentacion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.monitor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-monitor {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.logros-monitor {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.logros-monitor li {
+    margin: 10px 0;
+}
+
+.logros-monitor i {
+    color: #007bff;
+    /* Cambia el color a tu preferencia */
+    margin-right: 10px;
+}
