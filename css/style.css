@@ -34,7 +34,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 110px;
+    width: 125px;
     /* Ajusta el tamaño del logo */
     height: auto;
 }
@@ -289,11 +289,11 @@ a[href="https://www.freecounterstat.com"] {
     text-align: center;
 }
 
-#presentacion h2 {
+/* #presentacion h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
-}
+} */
 
 .monitor-info {
     display: flex;
