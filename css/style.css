@@ -163,23 +163,6 @@ body.scrolled .back-to-top {
     display: block;
 }
 
-/* Métodos de Entrenamiento */
-#metodos ul {
-    list-style-type: none;
-    /* Quitar los puntos por defecto */
-    padding: 0;
-}
-
-#metodos ul li {
-    font-size: 18px;
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-#metodos ul li strong {
-    color: #0077b6;
-    /* Azul para los nombres de los entrenamientos */
-}
 
 /* Datos de contacto */
 .contact-info {
@@ -248,9 +231,6 @@ a[href="https://www.freecounterstat.com"] {
     text-align: center;
 }
 
-/* #tarifas h2 {
-    color: #0077b6;
-} */
 
 #tarifas ul {
     list-style: none;
