@@ -25,6 +25,27 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Estilo para el logo */
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    /* Espacio entre el logo y el texto */
+}
+
+header .logo img {
+    width: 50px;
+    /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Alineación del título junto al logo */
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
 /* Menú principal */
 nav {
     background: #333;
