@@ -1,6 +1,6 @@
 /* Justificar texto en secciones */
 section {
-    text-align: justify;
+    /* text-align: justify; */
     text-align: center;
 }
 
@@ -9,7 +9,7 @@ h1,
 h2,
 h3 {
     text-align: justify;
-    text-align: center; 
+    /* text-align: center;  */
     margin: 0 auto;
     width: 80%;
 }
