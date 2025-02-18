@@ -35,7 +35,7 @@ header h1 {
     text-align: center;
     margin-bottom: 0;
     font-family: 'Mistral', sans-serif;
-    font-size: 5em; 
+    font-size: 5em;
     /* Ajusta el tamaño según lo desees */
     font-weight: bold;
 }
@@ -57,8 +57,8 @@ header .logo img {
 nav {
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */ /* Alinea el menú a la derecha */
-    justify-content: center;
+    justify-content: flex-end;
+    /* Alinea el menú a la derecha */
     z-index: 1;
     /* Asegura que el menú esté por encima del encabezado */
 }
@@ -72,7 +72,6 @@ nav {
 
 /* Menú principal */
 nav {
-    text-align: center;
     background: #333;
     color: white;
     padding: 10px;
@@ -81,8 +80,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
 }
 
