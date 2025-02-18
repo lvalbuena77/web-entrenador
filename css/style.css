@@ -113,7 +113,7 @@ nav ul li a:hover {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 /* Menú para pantallas grandes */
@@ -121,6 +121,14 @@ nav ul li a:hover {
     #menu {
         display: block;
     }
+}
+
+.contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    /* Fuerza que los elementos se apilen en columna */
+    align-items: center;
+    /* Centra horizontalmente */
 }
 
 /* Responsividad: Estilos para pantallas pequeñas */
@@ -360,7 +368,7 @@ a[href="https://www.freecounterstat.com"] {
 #tarifas li:hover {
     color: #ffcc00;
     cursor: pointer;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 /* Estilos para la sección Monitor */
