@@ -34,7 +34,7 @@ header h1 {
     flex-grow: 1;
     text-align: center;
     margin-bottom: 0;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Mistral', sans-serif;
     font-size: 3em;
     /* Ajusta el tamaño según lo desees */
     font-weight: bold;
@@ -57,7 +57,7 @@ header .logo img {
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex;
     /* Alinea el menú a la derecha */
     z-index: 1;
     /* Asegura que el menú esté por encima del encabezado */
