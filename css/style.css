@@ -1,3 +1,15 @@
+/* Justificar texto en secciones */
+section {
+    text-align: justify;
+}
+
+/* Centrar títulos */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
 /* Reset de estilos */
 * {
     margin: 0;
@@ -29,7 +41,7 @@ header h1 {
 header .logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 90px;
+    margin-right: 50px;
     /* Aumentado margen para mayor separación */
 }
 
