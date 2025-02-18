@@ -72,6 +72,7 @@ nav {
 
 /* Menú principal */
 nav {
+    text-align: center;
     background: #333;
     color: white;
     padding: 10px;
@@ -80,7 +81,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
     padding: 0;
 }
 
