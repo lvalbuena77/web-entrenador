@@ -28,3 +28,11 @@ window.addEventListener('scroll', function () {
         backToTopBtn.classList.remove('show'); // Ocultar botón
     }
 });
+
+// Cierra el menú al hacer clic en un enlace
+document.querySelectorAll('#menu a').forEach(item => {
+    item.addEventListener('click', function () {
+        document.getElementById('menu').style.display = 'none';
+    });
+});
+

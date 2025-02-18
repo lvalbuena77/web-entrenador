@@ -413,3 +413,42 @@ pre {
         padding-bottom: 10px;
     }
 }
+
+/* Mostrar el menú solo cuando el icono hamburguesa esté activo */
+#menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* Ajusta según el tamaño del encabezado */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#menu.active {
+    display: block;
+    /* Muestra el menú cuando esté activo */
+}
+
+/* Cuando el menú hamburguesa está activo, asegúrate de que el contenido no se superponga */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        z-index: 1;
+    }
+
+    #menu {
+        position: absolute;
+        top: 60px;
+        /* Asegúrate de que el menú se muestre debajo del encabezado */
+        left: 0;
+        width: 100%;
+    }
+
+    .logo {
+        z-index: 2;
+        /* Asegúrate de que el logo quede por encima del menú */
+    }
+}
