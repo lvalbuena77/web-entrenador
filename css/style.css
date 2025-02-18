@@ -67,11 +67,13 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Agregado efecto de transición */
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Cambia el color del enlace al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del enlace al pasar el mouse */
 }
 
 /* Menú hamburguesa (móviles) */
@@ -398,5 +400,16 @@ pre {
 
     #tipos li {
         text-align: center;
+    }
+}
+
+/* Asegurarse de que haya espacio en pantallas pequeñas */
+@media (max-width: 768px) {
+    #tipos ul li strong {
+        margin-right: 10px;
+    }
+
+    #tipos ul li {
+        padding-bottom: 10px;
     }
 }

@@ -19,10 +19,12 @@ function scrollToTop() {
 
 // Mostrar el botón "Volver arriba" cuando se haga scroll hacia abajo
 window.addEventListener('scroll', function () {
+    let backToTopBtn = document.querySelector('.back-to-top');
     if (window.scrollY > 100) {
         document.body.classList.add('scrolled');
+        backToTopBtn.classList.add('show'); // Mostrar botón
     } else {
         document.body.classList.remove('scrolled');
+        backToTopBtn.classList.remove('show'); // Ocultar botón
     }
 });
-
