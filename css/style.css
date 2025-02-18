@@ -22,6 +22,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    /* Asegura que el menú no se suba sobre la cabecera */
+    padding-left: 20px;
+    /* Aumentamos el espacio en la izquierda */
+    padding-right: 20px;
+    /* Aumentamos el espacio en la derecha */
 }
 
 header h1 {
@@ -34,7 +40,7 @@ header h1 {
 header .logo {
     /* display: inline-block;
     vertical-align: middle; */
-    margin-right: 90px;
+    margin-right: 20px;
     /* Aumentado margen para mayor separación */
 }
 
@@ -47,6 +53,10 @@ header .logo img {
 nav {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    /* Alinea el menú a la derecha */
+    z-index: 1;
+    /* Asegura que el menú esté por encima del encabezado */
 }
 
 /* Alineación del título junto al logo */
@@ -88,15 +98,25 @@ nav ul li a:hover {
 }
 
 /* Menú hamburguesa (móviles) */
+#menu {
+    display: none;
+    /* Ocultamos el menú por defecto */
+}
+
+#menu.show {
+    display: block;
+    /* Lo mostramos cuando tiene la clase 'show' */
+}
+
 .menu-icon {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    padding: 10px;
-    text-align: right;
+    /* padding: 10px;
+    text-align: right; */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .menu-icon {
         display: block;
     }
@@ -119,6 +139,43 @@ nav ul li a:hover {
 
     nav ul.show {
         display: flex;
+    }
+} */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Pone el logo y el título en columna */
+        text-align: center;
+        /* Centra los elementos */
+    }
+
+    nav {
+        width: 100%;
+        /* Hace que el nav ocupe todo el ancho */
+        justify-content: center;
+        /* Centra el menú */
+    }
+
+    #menu {
+        width: 100%;
+        /* Asegura que el menú ocupe todo el ancho en móvil */
+        text-align: center;
+        /* Centra los elementos del menú */
+        padding: 10px 0;
+        background: #0077b6;
+        /* Fondo del menú */
+    }
+
+    #menu li {
+        display: block;
+        /* Los elementos del menú se muestran verticalmente */
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        margin: 10px 0;
     }
 }
 
