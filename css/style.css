@@ -116,7 +116,7 @@ nav ul li a:hover {
     text-align: right; */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .menu-icon {
         display: block;
     }
@@ -140,8 +140,9 @@ nav ul li a:hover {
     nav ul.show {
         display: flex;
     }
-}
+} */
 
+/* Responsividad: Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -177,6 +178,36 @@ nav ul li a:hover {
         display: block;
         margin: 10px 0;
     }
+
+        /* Cambia el comportamiento de la lista */
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background: #333;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+    
+        nav ul.show {
+            display: flex;
+        }
+    
+        /* Asegura que el menú hamburguesa se vea correctamente */
+        nav ul li {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+    
+        /* Estilos de la hamburguesa */
+        .menu-icon {
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
 }
 
 /* Secciones generales */
@@ -471,13 +502,13 @@ pre {
     }
 }
 
-/* Asegurarse de que haya espacio en pantallas pequeñas */
+/* Responsividad */
 @media (max-width: 768px) {
-    #tipos ul li strong {
-        margin-right: 10px;
+    #tipos ul {
+        flex-direction: column;
     }
 
-    #tipos ul li {
-        padding-bottom: 10px;
+    .foto-entrenamiento {
+        max-width: 90%;
     }
 }
