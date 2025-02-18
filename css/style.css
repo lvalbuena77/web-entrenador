@@ -19,16 +19,21 @@ header {
     background: #0077b6;
     color: white;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /* Estilo para el logo */
 header .logo {
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block;
+    vertical-align: middle; */
     margin-right: 90px;
     /* Aumentado margen para mayor separación */
 }
@@ -38,12 +43,18 @@ header .logo img {
     height: auto;
 }
 
+/* Navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
 /* Alineación del título junto al logo */
-header h1 {
+/* header h1 {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0;
-}
+} */
 
 /* Menú principal */
 nav {
