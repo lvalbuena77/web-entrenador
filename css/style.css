@@ -48,20 +48,15 @@ header {
 
 /* Estilo para el logo */
 header .logo {
+    position: absolute;
     display: block;
     /* margin-right: 20px; */
+    left: 20px;
 }
 
 header .logo img {
     width: 160px;
     height: auto;
-}
-
-/* Alinear el logo completamente a la izquierda */
-.logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
 }
 
 /* Alineación del título junto al logo */
