@@ -23,11 +23,8 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    /* Asegura que el menú no se suba sobre la cabecera */
     padding-left: 20px;
-    /* Aumentamos el espacio en la izquierda */
     padding-right: 20px;
-    /* Aumentamos el espacio en la derecha */
 }
 
 header h1 {
@@ -36,16 +33,12 @@ header h1 {
     margin-bottom: 0;
     font-family: 'Mistral', sans-serif;
     font-size: 3em;
-    /* Ajusta el tamaño según lo desees */
     font-weight: bold;
 }
 
 /* Estilo para el logo */
 header .logo {
-    /* display: inline-block;
-    vertical-align: middle; */
     margin-right: 20px;
-    /* Aumentado margen para mayor separación */
 }
 
 header .logo img {
@@ -58,19 +51,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* Alinea el menú a la derecha */
     z-index: 1;
-    /* Asegura que el menú esté por encima del encabezado */
 }
 
-/* Alineación del título junto al logo */
-/* header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 0;
-} */
-
-/* Menú principal */
 nav {
     background: #333;
     color: white;
@@ -93,23 +76,19 @@ nav ul li a {
     color: white;
     font-weight: bold;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    /* Agregado efecto de transición */
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Cambia el color del enlace al pasar el mouse */
-    /* transform: scale(1.1); Aumenta el tamaño del enlace al pasar el mouse */
+    color: #ffcc00;
 }
 
 /* Menú hamburguesa (móviles) */
 #menu {
     display: none;
-    /* Ocultamos el menú por defecto */
 }
 
 #menu.show {
     display: block;
-    /* Lo mostramos cuando tiene la clase 'show' */
 }
 
 .menu-icon {
@@ -120,7 +99,6 @@ nav ul li a:hover {
     text-align: right;
 }
 
-/* Menú para pantallas grandes */
 @media (min-width: 769px) {
     #menu {
         display: block;
@@ -130,41 +108,29 @@ nav ul li a:hover {
 .contenedor-menu {
     display: flex;
     flex-direction: column;
-    /* Fuerza que los elementos se apilen en columna */
     align-items: center;
-    /* Centra horizontalmente */
 }
 
-/* Responsividad: Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        /* Pone el logo y el título en columna */
         text-align: center;
-        /* Centra los elementos */
     }
 
     nav {
         width: 100%;
-        /* Hace que el nav ocupe todo el ancho */
         justify-content: center;
-        /* Centra el menú */
     }
 
     #menu {
         width: 100%;
-        /* Asegura que el menú ocupe todo el ancho en móvil */
         text-align: center;
-        /* Centra los elementos del menú */
         padding: 10px 0;
-        /* background: #0077b6; */
         background: #333;
-        /* Fondo del menú */
     }
 
     #menu li {
         display: block;
-        /* Los elementos del menú se muestran verticalmente */
         margin: 10px 0;
     }
 
@@ -173,7 +139,6 @@ nav ul li a:hover {
         margin: 10px 0;
     }
 
-    /* Cambia el comportamiento de la lista */
     nav ul {
         display: none;
         flex-direction: column;
@@ -188,20 +153,17 @@ nav ul li a:hover {
         display: flex;
     }
 
-    /* Asegura que el menú hamburguesa se vea correctamente */
     nav ul li {
         text-align: center;
         padding: 10px;
         border-bottom: 1px solid white;
     }
 
-    /* Estilos de la hamburguesa */
     .menu-icon {
         display: block;
         margin-top: 10px;
         cursor: pointer;
     }
-
 }
 
 /* Secciones generales */
@@ -218,7 +180,6 @@ h2 {
     color: #0077b6;
 }
 
-/* Imágenes */
 section img {
     width: 100%;
     max-width: 500px;
@@ -229,7 +190,6 @@ section img {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Botones */
 .boton {
     background-color: #ffcc00;
     color: black;
@@ -246,7 +206,6 @@ section img {
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background: #003459;
     color: white;
@@ -255,7 +214,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Botón "Volver arriba" */
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -278,7 +236,6 @@ body.scrolled .back-to-top {
     display: block;
 }
 
-/* Tipos de Entrenamiento */
 #tipos ul {
     list-style-type: none;
     padding: 0;
@@ -290,235 +247,4 @@ body.scrolled .back-to-top {
     margin: 10px 0;
     line-height: 1.6;
     padding-left: 15px;
-}
-
-/* Datos de contacto */
-.contact-info {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.contact-info i {
-    margin-right: 8px;
-    color: #0077b6;
-    font-size: 20px;
-}
-
-/* Redes sociales */
-.social-media {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-media a {
-    font-size: 24px;
-    color: #0077b6;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #ffcc00;
-}
-
-/* Contador de visitas */
-.contador-visitas {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin-top: 10px;
-}
-
-/* Enlace "hit counter" */
-a[href="https://www.freecounterstat.com"] {
-    display: none;
-}
-
-/* Tarifas */
-#tarifas {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-}
-
-#tarifas ul {
-    list-style: none;
-    padding: 0;
-}
-
-#tarifas li {
-    font-size: 18px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-#tarifas img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-#tarifas li:hover {
-    color: #ffcc00;
-    cursor: pointer;
-    /* text-decoration: underline; */
-}
-
-/* Estilos para la sección Monitor */
-#presentacion {
-    padding: 40px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.monitor-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.foto-monitor {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.logros-monitor {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.logros-monitor li {
-    margin: 10px 0;
-}
-
-.logros-monitor i {
-    color: #0077b6;
-    margin-right: 10px;
-}
-
-/* Estilos para ejemplos de texto */
-code {
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #0077b6;
-    display: inline-block;
-}
-
-pre {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #333;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin: 20px 0;
-}
-
-/* Estilo para la sección de tipos de entrenamiento */
-#tipos {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-}
-
-#tipos ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#tipos li {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.foto-entrenamiento {
-    width: 100%;
-    max-width: 300px;
-    /* Ajusta el tamaño máximo según lo necesites */
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 15px;
-    /* Redondeo de bordes para darle un efecto suave */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#tipos i {
-    font-size: 24px;
-    /* Tamaño del ícono */
-    margin-right: 10px;
-    /* Espacio entre el ícono y el texto */
-}
-
-#tipos p {
-    font-size: 16px;
-    color: #333;
-}
-
-@media (min-width: 769px) {
-    #tipos ul {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #tipos li {
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        text-align: left;
-        justify-content: center;
-    }
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    #tipos ul {
-        flex-direction: column;
-    }
-
-    #tipos li {
-        text-align: center;
-    }
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    #tipos ul {
-        flex-direction: column;
-    }
-
-    .foto-entrenamiento {
-        max-width: 90%;
-    }
 }
