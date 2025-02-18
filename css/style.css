@@ -34,6 +34,15 @@ header h1 {
     font-family: 'Mistral', sans-serif;
     font-size: 3em;
     font-weight: bold;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+        /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
 }
 
 /* Estilo para el logo */
