@@ -236,6 +236,43 @@ body.scrolled .back-to-top {
     display: block;
 }
 
+/* Estilos para la sección Monitor */
+#presentacion {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.monitor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-monitor {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.logros-monitor {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.logros-monitor li {
+    margin: 10px 0;
+}
+
+.logros-monitor i {
+    color: #0077b6;
+    margin-right: 10px;
+}
+
 #tipos ul {
     list-style-type: none;
     padding: 0;
@@ -247,4 +284,58 @@ body.scrolled .back-to-top {
     margin: 10px 0;
     line-height: 1.6;
     padding-left: 15px;
+}
+
+/* Tarifas */
+#tarifas {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+#tarifas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tarifas li {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#tarifas img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#tarifas li:hover {
+    color: #0077b6;
+    cursor: pointer;
+}
+
+/* Redes sociales */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+/* Enlace "hit counter" */
+a[href="https://www.freecounterstat.com"] {
+    display: none;
 }
