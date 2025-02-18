@@ -113,34 +113,8 @@ nav ul li a:hover {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
-    text-align: right;
+    text-align: center;
 }
-
-/* @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #333;
-        width: 100%;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-
-    nav ul li {
-        text-align: center;
-        padding: 10px;
-        border-bottom: 1px solid white;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-} */
 
 /* Menú para pantallas grandes */
 @media (min-width: 769px) {
