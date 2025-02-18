@@ -439,16 +439,4 @@ pre {
         z-index: 1;
     }
 
-    #menu {
-        position: absolute;
-        top: 60px;
-        /* Asegúrate de que el menú se muestre debajo del encabezado */
-        left: 0;
-        width: 100%;
-    }
-
-    .logo {
-        z-index: 2;
-        /* Asegúrate de que el logo quede por encima del menú */
-    }
 }

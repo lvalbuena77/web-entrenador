@@ -36,3 +36,16 @@ document.querySelectorAll('#menu a').forEach(item => {
     });
 });
 
+// Cerrar el menú si se hace clic fuera de él
+document.addEventListener('click', function (event) {
+    var menu = document.getElementById('menu');
+    var menuIcon = document.querySelector('.menu-icon');
+    var isClickInsideMenu = menu.contains(event.target);
+    var isClickInsideMenuIcon = menuIcon.contains(event.target);
+
+    // Si el clic es fuera del menú y del icono, lo cerramos
+    if (!isClickInsideMenu && !isClickInsideMenuIcon) {
+        menu.classList.remove('active');
+    }
+});
+
