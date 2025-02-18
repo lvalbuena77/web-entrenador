@@ -2,13 +2,16 @@
 function toggleMenu() {
     let menu = document.getElementById("menu");
     menu.classList.toggle("show");
+    menu.classList.toggle("active"); // Agrega/Elimina 'active' para manejar el estado del menú
 }
 
 // Detectar cuando la ventana cambia de tamaño y ocultar el menú si es necesario
 window.addEventListener("resize", function () {
     let menu = document.getElementById("menu");
     if (window.innerWidth > 768) {
+        // Asegurarse de que el menú esté cerrado en pantallas grandes
         menu.classList.remove("show");
+        menu.classList.remove("active");
     }
 });
 
@@ -29,10 +32,12 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Cierra el menú al hacer clic en un enlace
+// Cierra el menú al hacer clic en un enlace dentro del menú
 document.querySelectorAll('#menu a').forEach(item => {
     item.addEventListener('click', function () {
-        document.getElementById('menu').style.display = 'none';
+        let menu = document.getElementById('menu');
+        menu.classList.remove('show');
+        menu.classList.remove('active');
     });
 });
 
@@ -45,6 +50,7 @@ document.addEventListener('click', function (event) {
 
     // Si el clic es fuera del menú y del icono, lo cerramos
     if (!isClickInsideMenu && !isClickInsideMenuIcon) {
+        menu.classList.remove('show');
         menu.classList.remove('active');
     }
 });
