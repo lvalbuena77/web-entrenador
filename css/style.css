@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center;
 }
 
 /* Encabezado */
@@ -18,24 +19,18 @@ header {
     background: #0077b6;
     color: white;
     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
 }
 
-/* Contenedor del logo y título */
-/* .header-container {
-    display: flex;
-    align-items: center;
-} */
+header h1 {
+    margin-bottom: 10px;
+}
 
 /* Estilo para el logo */
 header .logo {
-    
-    display: block;
-    margin-right: 20px;
-   
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 90px;
+    /* Aumentado margen para mayor separación */
 }
 
 header .logo img {
@@ -45,8 +40,9 @@ header .logo img {
 
 /* Alineación del título junto al logo */
 header h1 {
-    margin: 0;
-    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
 }
 
 /* Menú principal */
