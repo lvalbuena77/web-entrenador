@@ -7,8 +7,7 @@ section {
 /* Centrar títulos */
 h1,
 h2,
-h3,
-p {
+h3 {
     text-align: justify;
     text-align: center; 
     margin: 0 auto;
