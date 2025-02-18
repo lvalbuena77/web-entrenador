@@ -1,18 +1,3 @@
-/* Justificar texto en secciones */
-section {
-    /* text-align: justify; */
-    text-align: center;
-}
-
-/* Centrar títulos */
-h1,
-h2,
-h3 {
-    text-align: justify;
-    /* text-align: center;  */
-    margin: 0 auto;
-    width: 80%;
-}
 
 /* Reset de estilos */
 * {
@@ -48,10 +33,10 @@ header {
 
 /* Estilo para el logo */
 header .logo {
-    position: absolute;
+    
     display: block;
-    /* margin-right: 20px; */
-    left: 20px;
+    margin-right: 20px;
+   
 }
 
 header .logo img {
