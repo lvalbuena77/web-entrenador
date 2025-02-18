@@ -207,6 +207,25 @@ nav ul li a:hover {
             margin-top: 10px;
             cursor: pointer;
         }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
         
 }
 
