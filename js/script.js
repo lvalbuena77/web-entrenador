@@ -2,13 +2,13 @@
 function toggleMenu() {
     let menu = document.getElementById("menu");
     menu.classList.toggle("show");
-    // menu.classList.toggle("active"); // Agrega/Elimina 'active' para manejar el estado del menú
+    menu.classList.toggle("active"); // Agrega/Elimina 'active' para manejar el estado del menú
 }
 
 // Detectar cuando la ventana cambia de tamaño y ocultar el menú si es necesario
 window.addEventListener("resize", function () {
     let menu = document.getElementById("menu");
-    if (window.innerWidth > 768) {
+    if (window.innerWidth <= 768) {
         // Asegurarse de que el menú esté cerrado en pantallas grandes
         menu.classList.remove("show");
         menu.classList.remove("active");

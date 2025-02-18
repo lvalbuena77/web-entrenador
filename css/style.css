@@ -142,6 +142,13 @@ nav ul li a:hover {
     }
 } */
 
+/* Menú para pantallas grandes */
+@media (min-width: 769px) {
+    #menu {
+        display: block;
+    }
+}
+
 /* Responsividad: Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
