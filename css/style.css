@@ -54,7 +54,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+    /* Alinea el menú a la derecha */
+    z-index: 1;
+    /* Asegura que el menú esté por encima del encabezado */
 }
 
 /* Alineación del título junto al logo */
@@ -92,7 +94,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffcc00; /* Cambia el color del enlace al pasar el mouse */
-    transform: scale(1.1); /* Aumenta el tamaño del enlace al pasar el mouse */
+    /* transform: scale(1.1); Aumenta el tamaño del enlace al pasar el mouse */
 }
 
 /* Menú hamburguesa (móviles) */

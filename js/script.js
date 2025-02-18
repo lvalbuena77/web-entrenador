@@ -2,7 +2,7 @@
 function toggleMenu() {
     let menu = document.getElementById("menu");
     menu.classList.toggle("show");
-    menu.classList.toggle("active"); // Agrega/Elimina 'active' para manejar el estado del menú
+    // menu.classList.toggle("active"); // Agrega/Elimina 'active' para manejar el estado del menú
 }
 
 // Detectar cuando la ventana cambia de tamaño y ocultar el menú si es necesario
