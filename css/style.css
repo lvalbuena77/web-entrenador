@@ -116,7 +116,7 @@ nav ul li a:hover {
     text-align: right;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .menu-icon {
         display: block;
     }
@@ -140,9 +140,75 @@ nav ul li a:hover {
     nav ul.show {
         display: flex;
     }
+} */
+
+/* Responsividad: Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Pone el logo y el título en columna */
+        text-align: center;
+        /* Centra los elementos */
+    }
+
+    nav {
+        width: 100%;
+        /* Hace que el nav ocupe todo el ancho */
+        justify-content: center;
+        /* Centra el menú */
+    }
+
+    #menu {
+        width: 100%;
+        /* Asegura que el menú ocupe todo el ancho en móvil */
+        text-align: center;
+        /* Centra los elementos del menú */
+        padding: 10px 0;
+        background: #0077b6;
+        /* Fondo del menú */
+    }
+
+    #menu li {
+        display: block;
+        /* Los elementos del menú se muestran verticalmente */
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Cambia el comportamiento de la lista */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Asegura que el menú hamburguesa se vea correctamente */
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    /* Estilos de la hamburguesa */
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
 }
-
-
 
 /* Secciones generales */
 section {
