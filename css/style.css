@@ -348,3 +348,10 @@ body.scrolled .back-to-top {
 a[href="https://www.freecounterstat.com"] {
     display: none;
 }
+
+.contact-info a {
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+    display: inline-block;
+    /* Asegura que respete el ancho del contenido */
+}
