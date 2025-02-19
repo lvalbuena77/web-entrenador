@@ -18,13 +18,13 @@ body {
 header {
     background: #0077b6;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 header h1 {
@@ -45,23 +45,13 @@ header h1 {
     }
 }
 
-/* Estilo para el logo */
-header .logo {
-    margin-right: 20px;
-}
-
-header .logo img {
-    width: 160px;
-    height: auto;
-}
-
 /* Navegación */
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     z-index: 1;
-    background: #333;
+    /* background: #333; */
     color: white;
     padding: 10px;
 }
@@ -87,6 +77,18 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
     transform: scale(1.1);
+}
+
+/* Estilo para el logo */
+header .logo {
+    /* margin-right: 20px; */
+    margin-right: 0;
+    margin-left: auto;
+}
+
+header .logo img {
+    width: 160px;
+    height: auto;
 }
 
 /* Menú hamburguesa (móviles) */
